@@ -1,12 +1,30 @@
-package mvc.controllers.models;
+package mvc.models;
 
 public class usuario {
-    String usuario;
-    String contrasena;
+    private String usuario;
+    private String contrasena;
 
-    // Constructor
     public usuario(String usuario, String contrasena){
         this.usuario = usuario;
+        this.contrasena = contrasena;
+    }
+
+    public usuario(){
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
 }

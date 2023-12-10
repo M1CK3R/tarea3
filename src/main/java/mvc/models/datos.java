@@ -1,11 +1,8 @@
-package mvc.controllers.models;
-
-import javafx.fxml.FXML;
-import mvc.application.Application;
+package mvc.models;
 
 import java.util.ArrayList;
 
 public class datos {
-    ArrayList<usuario> datosUsuario = new ArrayList<>();
+    ArrayList<?> datosUsuario = new ArrayList<>();
 
 }

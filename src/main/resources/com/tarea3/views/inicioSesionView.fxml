@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.tarea3.tarea3.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #27272a;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="mvc.controllers.inicioSesionController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="campoUsuario" alignment="CENTER" onAction="#ingresarUsuario" promptText="Usuario" style="-fx-background-color: #27272a; -fx-border-color: #ade571; -fx-border-radius: 3;" />
+   <Label fx:id="textoUsuario" text="Ingrese nombre de usuario" textAlignment="CENTER" textFill="#ade571">
+      <font>
+         <Font name="Book Antiqua" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="campoContra" alignment="CENTER" onAction="#ingresarContrasena" promptText="Contraseña" style="-fx-background-color: #27272a; -fx-border-color: #ade571; -fx-border-radius: 3;" />
+   <Label fx:id="textoContra" text="Ingrese la contraseña" textFill="#ade571" />
+    <Button fx:id="botonConectar" onAction="#clicConectar" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: #27272a; -fx-border-color: #ade571; -fx-border-radius: 3;" text="Conectar" textFill="#ade571" />
 </VBox>
